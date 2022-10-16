@@ -1,7 +1,22 @@
 body {
-    background: #f2eee3;
+    background-color: rgba(245, 245, 245, 0.6);
+    margin: 0;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: SF_Pro;
 }
-
+@font-face {
+    font-family: SF_Pro;
+    src: url('../fonts/SF-Pro.ttf');
+}
+@font-face {
+    font-family: SF_Pro_it;
+    src: url('../fonts/SF-Pro-Italic.ttf');
+}
+@font-face {
+    font-family: SF_Pro_semibold;
+    src: url('../fonts/SF-Pro-Text-Semibold.otf');
+}
 .container-cov {
     position: absolute;
     width: 100%;
@@ -17,13 +32,16 @@ body {
 }
 .button_container {
     position: fixed;
-    top: 5%;
+    top: 2%;
     right: 2%;
-    height: 27px;
+    height: 100%;
     width: 35px;
     cursor: pointer;
     z-index: 100;
     transition: opacity 0.25s ease;
+    display: flex;
+    align-items: center;
+    
 }
 
 .button_container:hover {
@@ -42,7 +60,7 @@ body {
     background: #fff;
 }
 .button_container span {
-    background: #7eaf5a;
+    background: rgba(0, 0, 0, 1);
     border: none;
     height: 5px;
     width: 100%;
@@ -51,6 +69,7 @@ body {
     left: 0;
     transition: all 0.35s ease;
     cursor: pointer;
+    
 }
 .button_container span:nth-of-type(2) {
     top: 11px;
@@ -82,11 +101,21 @@ body {
     animation: fadeInRight 0.5s ease forwards;
     animation-delay: 0.35s;
 }
+
+@keyframes fadeInRight {
+    to{opacity: 1; color: white;}
+}
+
+
+
 .overlay.open li:nth-of-type(2) {
     animation-delay: .4s;
 }
 .overlay.open li:nth-of-type(3) {
     animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(4) {
+    animation-delay: 0.5s;
 }
 .overlay nav {
     position: relative;
@@ -120,9 +149,7 @@ body {
     text-decoration: none;
     overflow: hidden;
 }
-.overlay ul li a:hover::after, .overlay ul li a:focus::after, .overlay ul li a:active::after {
-    width: 100%;
-}
+
 .overlay ul li a::after {
     content: "";
     position: absolute;
@@ -133,4 +160,21 @@ body {
     height: 3px;
     background: #fff;
     transition: 0.35s;
+}
+
+#navbar {
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    background: rgb(58, 54, 54, 1);
+    position: fixed;
+    margin-bottom: 4rem;
+}
+.title {
+    font-size: 2.3rem;
+    height: 100%;
+    align-items: center; display: flex;
+    margin-left: 1rem;
+    color: rgb(122, 117, 117);
+    text-shadow: 2px 2px black;
 }

@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/overlay.css">
     <title>Galbi</title>
 </head>
 <body>
+    <div id="navbar">
+        <div class="title">Odin Recipes</div>
+        <div class="container-cov"></div>
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../recipes/ginataang_kalabasa.html">Ginataang Kalabasa</a></li>
+                <li><a href="../recipes/Tonkatsu.html">Tonkatsu</a></li>
+                <li><a href="../recipes/Galbi.html">Galbi</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
     <h1>Galbi</h1>
-    <img src="https://assets.bonappetit.com/photos/611e8718ed2adac4b80e74df/1:1/w_960,c_limit/0821-LA-Kalbi.jpg" alt="Prime short rib Kalbi">
+    <img class='gal'src="https://assets.bonappetit.com/photos/611e8718ed2adac4b80e74df/1:1/w_960,c_limit/0821-LA-Kalbi.jpg" alt="Prime short rib Kalbi">
     <h3>Kalbi</h3>
     <p>Galbi, galbi-gui, or grilled ribs is a type of gui in Korean cuisine. "Galbi" is the Korean word for "rib", and the dish is usually made with beef short ribs. When pork spareribs or another meat is used instead, the dish is named accordingly.</p>
-    <h4>Ingredients</h4>
+    <div class="container">
+        <details>
+    <summary>Ingredients</summary>
         <ul>
             <li><em>5 pounds</em> Korean style beef short ribs*</li>
             <li><em>1 cup</em> brown sugar, packed</li>
@@ -25,10 +48,18 @@
             <li><em>1/4 teaspoon</em> black pepper</li>
             <li><em>2</em> green onions, thinly sliced <em>(optional)</em></li>
         </ul>
-    <h4>Steps</h4>
+        </details>
+        </div>
+    <div class="container">
+        <details>
+    <summary>Steps</summary>
         <ol>
             <li>Preparation: Sprinkle brown sugar over beef and mix well to evenly coat. Let sit at room temperature for 10 minutes while preparing marinade. In a bowl, whisk together remaining ingredients. Transfer beef into a large sealable freezer bag (you may need 2). Add marinade, press out excess air from bags, and seal. Turn bag over several times to ensure beef is evenly coated. Refrigerate for at least 4 hours but preferably overnight.</li>
             <li>Heat gas or charcoal grill to medium-hot. Drain excess marinade off beef. Grill short ribs, turning once, to desired doneness, about 3 to 4 minutes per side. Garnish with thinly sliced green onions, if desired. Serve whole pieces as a main course or cut into smaller pieces, using kitchen shears, for a starter or party nibble.</li>
         </ol>
+        </details>
+    </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script><script  src="../js/overlay.js"></script>
 </body>
 </html>

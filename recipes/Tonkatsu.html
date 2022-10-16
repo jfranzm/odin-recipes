@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/overlay.css">
     <title>Tonkatsu</title>
 </head>
 <body>
+    <div id="navbar">
+        <div class="title">Odin Recipes</div>
+        <div class="container-cov"></div>
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../recipes/ginataang_kalabasa.html">Ginataang Kalabasa</a></li>
+                <li><a href="../recipes/Tonkatsu.html">Tonkatsu</a></li>
+                <li><a href="../recipes/Galbi.html">Galbi</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
     <h1>Tonkatsu</h1>
-    <img src="https://s23209.pcdn.co/wp-content/uploads/2013/09/IMG_6081edit-600x901.jpg?p=90" alt="Tonkatsu">
+    <img class='tonkatsu' src="https://s23209.pcdn.co/wp-content/uploads/2013/09/IMG_6081edit-600x901.jpg?p=90" alt="Tonkatsu">
     <p>Tonkatsu is a Japanese dish that consists of a breaded, deep-fried pork cutlet. It involves coating slices of pork with panko, and then frying them in oil. The two main types are fillet and loin. Tonkatsu is also the basis of other dishes such as katsukarē and katsudon.</p>
-    <h4>Ingredients</h4>
+    <div class="container">
+    <details>
+    <summary>Ingredients</summary>
         <ul>
             <li><em>1 cup</em> vegetable oil
             </li>
@@ -29,7 +52,11 @@
             <li>Tonkatsu sauce, <em>for serving</em>
             </li>
         </ul>
-    <h4>Steps</h4>
+    </details>
+    </div>
+    <div class="container">
+    <details>
+    <summary>Steps</summary>
         <ol>
             <li>Heat corn oil in a large skillet over medium high heat.
             </li>
@@ -40,5 +67,9 @@
             <li>Serve immediately with rice and tonkatsu sauce, if desired.
             </li>
         </ol>
+    </details>
+    </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script><script  src="../js/overlay.js"></script>
 </body>
 </html>
