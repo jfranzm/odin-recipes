@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/.css">
+    <link rel="stylesheet" href="css/home_page.css">
     <title>Odin Recipes</title>
 </head>
 <body>
@@ -20,27 +21,62 @@
     <div class="overlay" id="overlay">
         <nav class="overlay-menu">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../recipes/ginataang_kalabasa.html">Ginataang Kalabasa</a></li>
-                <li><a href="../recipes/Tonkatsu.html">Tonkatsu</a></li>
-                <li><a href="../recipes/Galbi.html">Galbi</a></li>
+                <li><a class="overlay-hyperlink" href="../index.html">Home</a></li>
+                <li><a class="overlay-hyperlink" href="../recipes/ginataang_kalabasa.html">Ginataang Kalabasa</a></li>
+                <li><a class="overlay-hyperlink" href="../recipes/Tonkatsu.html">Tonkatsu</a></li>
+                <li><a class="overlay-hyperlink" href="../recipes/Galbi.html">Galbi</a></li>
             </ul>
         </nav>
     </div>
     </div>
-    <h1>Odin Recipes</h1>
-    <details>
-        <summary>Recipes</summary>
-        <p><a href="recipes/ginataang_kalabasa.html">Ginataang Kalabasa</a></p>
-        <p><a href="recipes/Tonkatsu.html">Tonkatsu</a></p>
-        <p><a href="recipes/Galbi.html">Galbi</a></p>
-    </details>
-    <ul>
-        <li><a href="recipes/ginataang_kalabasa.html">Ginataang Kalabasa</a>
-        </li>
-        <li><a href="recipes/Tonkatsu.html">Tonkatsu</a></li>
-        <li><a href="recipes/Galbi.html">Galbi</a></li>
-    </ul>
+    <div id="cardset">
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="outer">
+                    <h1 class="titlecard">Ginataang Kalabasa</h1>
+                    <img src="https://panlasangpinoy.com/wp-content/uploads/2021/05/ginataang-sitaw-recipe.jpg" alt="Ginataang Kalabasa">
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="inner">
+                    <p>Ginataang kalabasa, also known as kalabasa sa gata, is a Filipino vegetable stew made from calabaza in coconut milk and spices. It commonly includes shrimp and yardlong beans and either bagoong or patis. It can also be cooked with fish, crab, or meat and a variety of other ingredients.</p>
+                    <a href="recipes/ginataang_kalabasa.html" type="button">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face face1">
+                <div class="outer">
+                    <h1 class="titlecard">Tonkatsu</h1>
+                    <img class='tonkatsu' src="https://s23209.pcdn.co/wp-content/uploads/2013/09/IMG_6081edit-600x901.jpg?p=90" alt="Tonkatsu">
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="inner">
+                    <p>Tonkatsu is a Japanese dish that consists of a breaded, deep-fried pork cutlet. It involves coating slices of pork with panko, and then frying them in oil. The two main types are fillet and loin. Tonkatsu is also the basis of other dishes such as katsukarē and katsudon.</p>
+                    <a href="recipes/Tonkatsu.html" type="button">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face face1">
+                <div class="outer">
+                    <h1 class="titlecard">Galbi</h1>
+                    <img class='gal'src="https://assets.bonappetit.com/photos/611e8718ed2adac4b80e74df/1:1/w_960,c_limit/0821-LA-Kalbi.jpg" alt="Prime short rib Kalbi">
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="inner">
+                    <p>Galbi, galbi-gui, or grilled ribs is a type of gui in Korean cuisine. "Galbi" is the Korean word for "rib", and the dish is usually made with beef short ribs. When pork spareribs or another meat is used instead, the dish is named accordingly.</p>
+                    <a href="recipes/Galbi.html" type="button">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
         <script src='//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script><script  src="js/overlay.js"></script>
 </body>
